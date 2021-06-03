@@ -1,0 +1,71 @@
+:root {
+  --text-color: #f1faee;
+  --bg-color: #1d3557;
+  --border-color: #457b9d;
+  --heading-bg: #457b9d;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  padding: 2rem 0;
+  font-family: sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+input[type="text"] {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--border-color);
+  outline: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem 0;
+  color: var(--text-color);
+  letter-spacing: 0.1rem;
+}
+
+input[type="text"]::placeholder {
+  color: var(--text-color);
+}
+input[type="text"]:focus {
+  background: transparent;
+  border-bottom: 2.5px solid var(--border-color);
+}
+
+ul {
+  list-style-type: none;
+  border-radius: 5px;
+  padding: 0.5rem 0;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+ul > li {
+  border: 1px solid var(--border-color);
+
+  padding: 0.4rem 0.3rem;
+}
+
+ul li#alphabet {
+  background: var(--heading-bg);
+  padding: 0.8rem 0.5rem;
+}
