@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -52,7 +52,6 @@ input[type="text"]:focus {
 
 ul {
   list-style-type: none;
-  border-radius: 5px;
   padding: 0.5rem 0;
 }
 a {
@@ -61,11 +60,18 @@ a {
 }
 ul > li {
   border: 1px solid var(--border-color);
-
   padding: 0.4rem 0.3rem;
 }
 
 ul li#alphabet {
   background: var(--heading-bg);
   padding: 0.8rem 0.5rem;
+}
+li:first-child {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+li:last-child {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
